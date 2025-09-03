@@ -160,7 +160,7 @@ def generate_with_groq(prompt):
         }
 
         data = {
-            "model": "llama3-8b-8192",
+            "model": "llama-3.1-8b-instant",
             "messages": [
                 {"role": "system", "content": "You are a professional business writer. Write clear, professional communications."},
                 {"role": "user", "content": prompt}
@@ -351,3 +351,4 @@ with col2:
             col_metrics1, col_metrics2 = st.columns(2)
             col_metrics1.metric("Word Count", word_count)
             col_metrics2.metric("Character Count", char_count)
+
